@@ -369,7 +369,9 @@
       <div class="column">
         <div class="content">
           <h2 class="title is-3">Zero-shot pixel alignment</h2>
-          <img src="./static/images/pixel-aligned-feature-computation.png" />
+          <div class="interpolation-image-wrapper-zero-shot">
+            <img src="./static/images/pixel-aligned-feature-computation.png" />
+          </div>
           <p>
             For each image, the global (f<sub>G</sub>) and local (f<sub>L</sub>) features are fused to obtain our pixel-aligned features (f<sub>P</sub>). <i>Top-left</i>: We first compute cosine similarities between each local feature (f<sub>L</sub>) with the global feature (f<sub>G</sub>). <i>Top-right</i>: We compute an inter-feature similarity matrix, and compute the average similarity of each local feature to every other local feature, denoted φ̄<sub>i</sub> . <i>Bottom-left</i>: We combine these similarities to produce weights for fusing f<sub>G</sub> and f<sub>L</sub> to obtain pixel-aligned features f<sub>P</sub>.
           </p>
@@ -382,7 +384,9 @@
         <h2 class="title is-3">Retaining fine-grained concepts</h2>
         <div class="columns is-centered">
           <div class="column content">
-            <img src="./static/images/pixel-aligned-qualitative.png" />
+            <div class="interpolation-image-wrapper-fine-grained">
+              <img src="./static/images/pixel-aligned-qualitative.png" />
+            </div>
             <p>
               Our approach to computing pixel-aligned features is adept at capturing long-tailed and fine-grained concepts. The plots to the right show the similarity scores between the embeddings of the cropped image regions corresponding to diet coke, lysol, and yogurt and their text embeddings, predicted by the base CLIP model used by LSeg and OpenSeg respectively. This implies that the base CLIP models know these concepts, yet, as can be seen on the tiled plots (center), LSeg and OpenSeg are not able to retrieve these concepts; they forget the concepts when finetuned. On the other hand, our zero-shot pixel-alignment approach does not suffer this drawback, and clearly delineates the corresponding pixels.
             </p>
@@ -400,7 +404,9 @@
       <div class="column">
         <div class="content">
           <h2 class="title is-3">UnCoCo dataset</h2>
-          <img src="./static/images/uncoco.png" />
+          <div class="interpolation-image-wrapper-uncoco">
+            <img src="./static/images/uncoco.png" />
+          </div>
           <p>
             To evaluate long-tailed reasoning and multimodal reasoning abilities, since there is no existing dataset, we capture a set of 20 RGB-D sequences comprising 78 commonly found objects and annotate them with text, audio, click, and image queries. For each query, we also provide the corresponding ground truth 2D and 3D retrieval results. This image showcases sample tabletop scenes from UnCoCo (left) and the resulting 3D reconstructions and labels (right).
           </p>
@@ -475,7 +481,9 @@
       <div class="column">
         <div class="content">
           <h3 class="title is-3">Tabletop rearrangement</h3>
-          <img src="./static/images/rearrangement.png" />
+          <div class="interpolation-image-wrapper-tabletop">
+            <img src="./static/images/rearrangement.png" />
+          </div>
           <p>
             The robot is provided with rearrangment goals involving novel objects. (Top row) push goldfish to the right of the yellow line, where goldfish refers to the brandname of the pack of Cheddar snack. (Bottom row) push baymax to the right of the yellow line, where baymax refers to the plush toy depicting the famous Disney character.
           </p>
@@ -618,7 +626,7 @@
             This website adapted from the Nerfies templates, which is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            This means you are free to borrow the <a href="https://github.com/conceptfusion/conceptfusion.github.io">source code</a> of this website,
+            This means you are free to borrow the <a href="https://github.com/concept-fusion/concept-fusion.github.io">source code</a> of this website,
             we just ask that you link back to the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies source code</a> in the footer.
             Please remember to remove the analytics code included in the header of the website which you do not want on your website.
           </p>

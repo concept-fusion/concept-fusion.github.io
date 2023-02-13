@@ -155,3 +155,20 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+.interpolation-image-wrapper-uncoco img {
+  margin-top: 50px ;
+  margin-bottom: 80px;
+}
+.interpolation-image-wrapper-tabletop img {
+  margin-top: 70px ;
+  margin-bottom: 100px;
+}
+.interpolation-image-wrapper-fine-grained img {
+  /* margin-top: 50px ; */
+  margin-bottom: 20px;
+}
+.interpolation-image-wrapper-zero-shot img {
+  margin-top: 25px ;
+  /* margin-bottom: 100px; */
+}
